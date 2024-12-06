@@ -14,3 +14,8 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 });
+
+Route::get('/sum/{num1}/{num2}', [HelloSahithyaController::class, 'sum']);
+Route::get('/substract/{num1}/{num2}', [HelloSahithyaController::class, 'substract']);
+Route::get('/multiply/{num1}/{num2}', [HelloSahithyaController::class, 'multiply']);
+Route::get('/divide/{num1}/{num2}', [HelloSahithyaController::class, 'divide']);
